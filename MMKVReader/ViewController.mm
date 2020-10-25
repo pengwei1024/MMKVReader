@@ -35,11 +35,40 @@ using namespace mmkv;
 }
 
 /**
+ * 弹出输入密码提示框
+ * @param prompt 提示框标题
+ * @return
+ */
+- (NSString *)inputBox:(NSString *)prompt {
+    NSAlert *alert = [NSAlert alertWithMessageText:prompt
+                                     defaultButton:@"OK"
+                                   alternateButton:@"Cancel"
+                                       otherButton:nil
+                         informativeTextWithFormat:@""];
+    NSTextField *input = [[NSTextField alloc] initWithFrame:NSMakeRect(0, 0, 200, 24)];
+    [alert setAccessoryView:input];
+    NSInteger button = [alert runModal];
+    if (button == NSAlertDefaultReturn) {
+        [input validateEditing];
+        return [input stringValue];
+    } else if (button == NSAlertAlternateReturn) {
+        return nil;
+    } else {
+        return nil;
+    }
+}
+
+/**
  * 加载 mmkv 文件并刷新列表
  * @param name 文件名称
  */
 - (void)loadFile:(std::string)name {
-    mmkv = MMKV::mmkvWithID(name);
+    NSString *cryptKey = [self inputBox:@"请输入加密key, 如果没有加密请直接确认"];
+    std::string key = cryptKey ? [cryptKey UTF8String] : "";
+    if (mmkv) {
+        mmkv->close();
+    }
+    mmkv = MMKV::mmkvWithID(name, MMKV_SINGLE_PROCESS, &key);
     [_dataArray removeAllObjects];
     [_showArray removeAllObjects];
     for (id key in mmkv->allKeys()) {
@@ -207,7 +236,7 @@ using namespace mmkv;
             auto ptr = (uint8_t *) buffer.getPtr();
             NSString *result = [[NSString alloc] init];
             for (int i = 0; i < buffer.length(); ++i) {
-                result = [result stringByAppendingString:[NSString stringWithFormat:@"%@",[[NSString alloc] initWithFormat:@"%1lx ",*(ptr + i)]]];
+                result = [result stringByAppendingString:[NSString stringWithFormat:@"%@", [[NSString alloc] initWithFormat:@"%1lx ", *(ptr + i)]]];
             }
             _showArray[row] = result;
             NSLog(@"string=%@", result);
