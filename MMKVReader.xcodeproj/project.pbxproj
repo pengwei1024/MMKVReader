@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		1EA9892525451E5100999D6E /* MMKVCore in Resources */ = {isa = PBXBuildFile; fileRef = 1EA9892425451E5100999D6E /* MMKVCore */; };
 		1EA9892D254528BA00999D6E /* libMMKVCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EA9892B254527DD00999D6E /* libMMKVCore.a */; };
+		1EA9892F25452DB200999D6E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EA9892E25452DB100999D6E /* libz.tbd */; };
 		4B3441D35EBA01CA351A171B /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4B3443C42883F4B85C125F54 /* ViewController.mm */; };
 		4B344380D61EA399B1EACC20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B344372823DFCB53B866A33 /* Assets.xcassets */; };
 		4B3444A056431327DA0525B6 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 4B344E62652521B2B6D8B1F2 /* .gitignore */; };
-		4B3444E87C7446AABF4BF068 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B344C9DBE464542502B8EC0 /* AppDelegate.m */; };
+		4B3444E87C7446AABF4BF068 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4B344C9DBE464542502B8EC0 /* AppDelegate.mm */; };
+		4B34461B523787A82569188B /* DragScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B34445B2B0B61E8915CED4D /* DragScrollView.m */; };
 		4B344872456DC7D889AFE4B1 /* MMKVReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B344945C2C801C328F163F2 /* MMKVReaderTests.m */; };
 		4B344ABED2A673ECA6F49D7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B344256D95A233752EDE3EA /* Main.storyboard */; };
 		4B344C30D26D7BD46F16D267 /* MMKVReaderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B344187EB4D2332CD9765C3 /* MMKVReaderUITests.m */; };
@@ -39,6 +41,7 @@
 /* Begin PBXFileReference section */
 		1EA9892425451E5100999D6E /* MMKVCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MMKVCore; path = MMKVReader/include/MMKVCore; sourceTree = "<group>"; };
 		1EA9892B254527DD00999D6E /* libMMKVCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMMKVCore.a; path = MMKV/libMMKVCore.a; sourceTree = "<group>"; };
+		1EA9892E25452DB100999D6E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		4B3440581232D51F17A7A15E /* MMKVReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMKVReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B34417909E1AEA853703980 /* MMKVReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMKVReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B344187EB4D2332CD9765C3 /* MMKVReaderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMKVReaderUITests.m; sourceTree = "<group>"; };
@@ -48,11 +51,13 @@
 		4B344372823DFCB53B866A33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B3443C42883F4B85C125F54 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		4B3443F65AD256D2F89EFB0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4B34445B2B0B61E8915CED4D /* DragScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragScrollView.m; sourceTree = "<group>"; };
 		4B3444F634663DB41C69262D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		4B344945C2C801C328F163F2 /* MMKVReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMKVReaderTests.m; sourceTree = "<group>"; };
 		4B344AA4AC0B4C5743E83571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		4B344AC90A19CDC46FEBF4A1 /* MMKVReader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MMKVReader.entitlements; sourceTree = "<group>"; };
-		4B344C9DBE464542502B8EC0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4B344C9DBE464542502B8EC0 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		4B344CC4068F4E18F6C4456C /* DragScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragScrollView.h; sourceTree = "<group>"; };
 		4B344DF335FD86F2DE2016F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4B344E62652521B2B6D8B1F2 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
 		4B344EABC1CEF8A3F0AD0207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
@@ -77,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EA9892F25452DB200999D6E /* libz.tbd in Frameworks */,
 				1EA9892D254528BA00999D6E /* libMMKVCore.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,6 +112,7 @@
 		4B34473A25EF2011DE91AE9F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1EA9892E25452DB100999D6E /* libz.tbd */,
 				1EA9892B254527DD00999D6E /* libMMKVCore.a */,
 				1EA9892425451E5100999D6E /* MMKVCore */,
 			);
@@ -140,11 +147,13 @@
 				4B344372823DFCB53B866A33 /* Assets.xcassets */,
 				4B344AC90A19CDC46FEBF4A1 /* MMKVReader.entitlements */,
 				4B34427855BBB85EE86C1AB1 /* AppDelegate.h */,
-				4B344C9DBE464542502B8EC0 /* AppDelegate.m */,
+				4B344C9DBE464542502B8EC0 /* AppDelegate.mm */,
 				4B344DF335FD86F2DE2016F1 /* main.m */,
 				4B344256D95A233752EDE3EA /* Main.storyboard */,
 				4B3444F634663DB41C69262D /* ViewController.h */,
 				4B3443C42883F4B85C125F54 /* ViewController.mm */,
+				4B34445B2B0B61E8915CED4D /* DragScrollView.m */,
+				4B344CC4068F4E18F6C4456C /* DragScrollView.h */,
 			);
 			path = MMKVReader;
 			sourceTree = "<group>";
@@ -273,9 +282,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B3444E87C7446AABF4BF068 /* AppDelegate.m in Sources */,
+				4B3444E87C7446AABF4BF068 /* AppDelegate.mm in Sources */,
 				4B344E343BB88CDB8C2FF436 /* main.m in Sources */,
 				4B3441D35EBA01CA351A171B /* ViewController.mm in Sources */,
+				4B34461B523787A82569188B /* DragScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

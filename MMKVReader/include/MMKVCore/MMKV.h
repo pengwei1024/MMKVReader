@@ -122,8 +122,6 @@ class MMKV {
 
     bool doFullWriteBack(std::pair<mmkv::MMBuffer, size_t> preparedData, mmkv::AESCrypt *newCrypter);
 
-    mmkv::MMBuffer getDataForKey(MMKVKey_t key);
-
     // isDataHolder: avoid memory copying
     bool setDataForKey(mmkv::MMBuffer &&data, MMKVKey_t key, bool isDataHolder = false);
 
@@ -150,6 +148,8 @@ class MMKV {
 public:
     // call this before getting any MMKV instance
     static void initializeMMKV(const MMKVPath_t &rootDir, MMKVLogLevel logLevel = MMKVLogInfo);
+    
+    mmkv::MMBuffer getDataForKey(MMKVKey_t key);
 
 #ifdef MMKV_APPLE
     // protect from some old code that don't call initializeMMKV()
@@ -230,6 +230,7 @@ public:
     bool set(NSObject<NSCoding> *__unsafe_unretained obj, MMKVKey_t key);
 
     NSObject *getObject(MMKVKey_t key, Class cls);
+    bool getVector(MMKVKey_t key, std::vector<std::string> &result);
 #else  // !defined(MMKV_APPLE)
     bool set(const char *value, MMKVKey_t key);
 
