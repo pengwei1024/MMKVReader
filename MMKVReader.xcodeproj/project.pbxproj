@@ -18,6 +18,7 @@
 		4B344872456DC7D889AFE4B1 /* MMKVReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B344945C2C801C328F163F2 /* MMKVReaderTests.m */; };
 		4B344ABED2A673ECA6F49D7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B344256D95A233752EDE3EA /* Main.storyboard */; };
 		4B344C30D26D7BD46F16D267 /* MMKVReaderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B344187EB4D2332CD9765C3 /* MMKVReaderUITests.m */; };
+		4B344CA0E9AB2AD017B34D26 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 4B3447C2175ADCB86A66BA44 /* README.md */; };
 		4B344E343BB88CDB8C2FF436 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B344DF335FD86F2DE2016F1 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		4B3443F65AD256D2F89EFB0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B34445B2B0B61E8915CED4D /* DragScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragScrollView.m; sourceTree = "<group>"; };
 		4B3444F634663DB41C69262D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4B3447C2175ADCB86A66BA44 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4B344945C2C801C328F163F2 /* MMKVReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMKVReaderTests.m; sourceTree = "<group>"; };
 		4B344AA4AC0B4C5743E83571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		4B344AC90A19CDC46FEBF4A1 /* MMKVReader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MMKVReader.entitlements; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				4B3447A5468885D1936E6044 /* MMKVReaderUITests */,
 				4B34473A25EF2011DE91AE9F /* Frameworks */,
 				4B344E62652521B2B6D8B1F2 /* .gitignore */,
+				4B3447C2175ADCB86A66BA44 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -286,6 +289,7 @@
 				4B344E343BB88CDB8C2FF436 /* main.m in Sources */,
 				4B3441D35EBA01CA351A171B /* ViewController.mm in Sources */,
 				4B34461B523787A82569188B /* DragScrollView.m in Sources */,
+				4B344CA0E9AB2AD017B34D26 /* README.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +341,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/MMKV",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.apkfuns.MMKVReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/MMKVReader/include\"/**";
@@ -394,7 +399,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -415,6 +420,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/MMKV",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.apkfuns.MMKVReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/MMKVReader/include\"/**";
@@ -517,7 +523,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
