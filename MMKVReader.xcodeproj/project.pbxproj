@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1EA9892525451E5100999D6E /* MMKVCore in Resources */ = {isa = PBXBuildFile; fileRef = 1EA9892425451E5100999D6E /* MMKVCore */; };
+		1EA9892D254528BA00999D6E /* libMMKVCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EA9892B254527DD00999D6E /* libMMKVCore.a */; };
+		4B3441D35EBA01CA351A171B /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4B3443C42883F4B85C125F54 /* ViewController.mm */; };
+		4B344380D61EA399B1EACC20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B344372823DFCB53B866A33 /* Assets.xcassets */; };
+		4B3444A056431327DA0525B6 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 4B344E62652521B2B6D8B1F2 /* .gitignore */; };
+		4B3444E87C7446AABF4BF068 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B344C9DBE464542502B8EC0 /* AppDelegate.m */; };
+		4B344872456DC7D889AFE4B1 /* MMKVReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B344945C2C801C328F163F2 /* MMKVReaderTests.m */; };
+		4B344ABED2A673ECA6F49D7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B344256D95A233752EDE3EA /* Main.storyboard */; };
+		4B344C30D26D7BD46F16D267 /* MMKVReaderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B344187EB4D2332CD9765C3 /* MMKVReaderUITests.m */; };
+		4B344E343BB88CDB8C2FF436 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B344DF335FD86F2DE2016F1 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B344BA6569A2A568682652F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B344E83A19B458DD06B09BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B344D9F7B8A4E642EC59E4D;
+			remoteInfo = MMKVReader;
+		};
+		4B344CB98015418122A34EB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B344E83A19B458DD06B09BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B344D9F7B8A4E642EC59E4D;
+			remoteInfo = MMKVReader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1EA9892425451E5100999D6E /* MMKVCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MMKVCore; path = MMKVReader/include/MMKVCore; sourceTree = "<group>"; };
+		1EA9892B254527DD00999D6E /* libMMKVCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMMKVCore.a; path = MMKV/libMMKVCore.a; sourceTree = "<group>"; };
+		4B3440581232D51F17A7A15E /* MMKVReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMKVReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B34417909E1AEA853703980 /* MMKVReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMKVReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B344187EB4D2332CD9765C3 /* MMKVReaderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMKVReaderUITests.m; sourceTree = "<group>"; };
+		4B34427855BBB85EE86C1AB1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4B3442D94F46C2FAF241A49E /* MMKVReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMKVReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B34431652C2FBEA8460CEA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		4B344372823DFCB53B866A33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B3443C42883F4B85C125F54 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		4B3443F65AD256D2F89EFB0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4B3444F634663DB41C69262D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4B344945C2C801C328F163F2 /* MMKVReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMKVReaderTests.m; sourceTree = "<group>"; };
+		4B344AA4AC0B4C5743E83571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		4B344AC90A19CDC46FEBF4A1 /* MMKVReader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MMKVReader.entitlements; sourceTree = "<group>"; };
+		4B344C9DBE464542502B8EC0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4B344DF335FD86F2DE2016F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4B344E62652521B2B6D8B1F2 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
+		4B344EABC1CEF8A3F0AD0207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B3444376116A3225116A44A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B34451FE3C6B2CEDD1EF78E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B344FAA591B7935AF11BDDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EA9892D254528BA00999D6E /* libMMKVCore.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B3445D4CDC57D9EFE2C4D66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B34417909E1AEA853703980 /* MMKVReader.app */,
+				4B3440581232D51F17A7A15E /* MMKVReaderTests.xctest */,
+				4B3442D94F46C2FAF241A49E /* MMKVReaderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B3445F9D9FEE47559F61493 /* MMKVReaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				4B34431652C2FBEA8460CEA7 /* Info.plist */,
+				4B344945C2C801C328F163F2 /* MMKVReaderTests.m */,
+			);
+			path = MMKVReaderTests;
+			sourceTree = "<group>";
+		};
+		4B34473A25EF2011DE91AE9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1EA9892B254527DD00999D6E /* libMMKVCore.a */,
+				1EA9892425451E5100999D6E /* MMKVCore */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B3447A5468885D1936E6044 /* MMKVReaderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4B344EABC1CEF8A3F0AD0207 /* Info.plist */,
+				4B344187EB4D2332CD9765C3 /* MMKVReaderUITests.m */,
+			);
+			path = MMKVReaderUITests;
+			sourceTree = "<group>";
+		};
+		4B344A42C7E247349A78AD8E = {
+			isa = PBXGroup;
+			children = (
+				4B3445D4CDC57D9EFE2C4D66 /* Products */,
+				4B344A9D1FC5C7F99A01EE3D /* MMKVReader */,
+				4B3445F9D9FEE47559F61493 /* MMKVReaderTests */,
+				4B3447A5468885D1936E6044 /* MMKVReaderUITests */,
+				4B34473A25EF2011DE91AE9F /* Frameworks */,
+				4B344E62652521B2B6D8B1F2 /* .gitignore */,
+			);
+			sourceTree = "<group>";
+		};
+		4B344A9D1FC5C7F99A01EE3D /* MMKVReader */ = {
+			isa = PBXGroup;
+			children = (
+				4B344AA4AC0B4C5743E83571 /* Info.plist */,
+				4B344372823DFCB53B866A33 /* Assets.xcassets */,
+				4B344AC90A19CDC46FEBF4A1 /* MMKVReader.entitlements */,
+				4B34427855BBB85EE86C1AB1 /* AppDelegate.h */,
+				4B344C9DBE464542502B8EC0 /* AppDelegate.m */,
+				4B344DF335FD86F2DE2016F1 /* main.m */,
+				4B344256D95A233752EDE3EA /* Main.storyboard */,
+				4B3444F634663DB41C69262D /* ViewController.h */,
+				4B3443C42883F4B85C125F54 /* ViewController.mm */,
+			);
+			path = MMKVReader;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B34477606B36A9338908AF5 /* MMKVReaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B344EEBF1EE878F343E68D9 /* Build configuration list for PBXNativeTarget "MMKVReaderTests" */;
+			buildPhases = (
+				4B3441C4EA5225886E9D6B3E /* Sources */,
+				4B3444376116A3225116A44A /* Frameworks */,
+				4B34406997AF5D9691A0764F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B34472FD8D28941844A20AC /* PBXTargetDependency */,
+			);
+			name = MMKVReaderTests;
+			productName = MMKVReaderTests;
+			productReference = 4B3440581232D51F17A7A15E /* MMKVReaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4B344D9F7B8A4E642EC59E4D /* MMKVReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B344018791DFE13E75FA67F /* Build configuration list for PBXNativeTarget "MMKVReader" */;
+			buildPhases = (
+				4B3444D0E5C0C6FE085A56E2 /* Sources */,
+				4B344FAA591B7935AF11BDDC /* Frameworks */,
+				4B3440D99273727EBA25D9DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MMKVReader;
+			productName = MMKVReader;
+			productReference = 4B34417909E1AEA853703980 /* MMKVReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4B344DCBDA572B5E33D8AC98 /* MMKVReaderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B344B0A4BD454828D3B1D8D /* Build configuration list for PBXNativeTarget "MMKVReaderUITests" */;
+			buildPhases = (
+				4B3445B383A7709A94F9AD77 /* Sources */,
+				4B34451FE3C6B2CEDD1EF78E /* Frameworks */,
+				4B3445DB8F5786B376F91D90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B344E5EF0B0D3270C3DB62C /* PBXTargetDependency */,
+			);
+			name = MMKVReaderUITests;
+			productName = MMKVReaderUITests;
+			productReference = 4B3442D94F46C2FAF241A49E /* MMKVReaderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B344E83A19B458DD06B09BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = apkfuns.com;
+			};
+			buildConfigurationList = 4B344C0E86DA010CBEBCD30F /* Build configuration list for PBXProject "MMKVReader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4B344A42C7E247349A78AD8E;
+			productRefGroup = 4B3445D4CDC57D9EFE2C4D66 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B344D9F7B8A4E642EC59E4D /* MMKVReader */,
+				4B34477606B36A9338908AF5 /* MMKVReaderTests */,
+				4B344DCBDA572B5E33D8AC98 /* MMKVReaderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B34406997AF5D9691A0764F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B3440D99273727EBA25D9DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B344380D61EA399B1EACC20 /* Assets.xcassets in Resources */,
+				1EA9892525451E5100999D6E /* MMKVCore in Resources */,
+				4B344ABED2A673ECA6F49D7A /* Main.storyboard in Resources */,
+				4B3444A056431327DA0525B6 /* .gitignore in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B3445DB8F5786B376F91D90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B3441C4EA5225886E9D6B3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B344872456DC7D889AFE4B1 /* MMKVReaderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B3444D0E5C0C6FE085A56E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B3444E87C7446AABF4BF068 /* AppDelegate.m in Sources */,
+				4B344E343BB88CDB8C2FF436 /* main.m in Sources */,
+				4B3441D35EBA01CA351A171B /* ViewController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B3445B383A7709A94F9AD77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B344C30D26D7BD46F16D267 /* MMKVReaderUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B34472FD8D28941844A20AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B344D9F7B8A4E642EC59E4D /* MMKVReader */;
+			targetProxy = 4B344BA6569A2A568682652F /* PBXContainerItemProxy */;
+		};
+		4B344E5EF0B0D3270C3DB62C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B344D9F7B8A4E642EC59E4D /* MMKVReader */;
+			targetProxy = 4B344CB98015418122A34EB6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4B344256D95A233752EDE3EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B3443F65AD256D2F89EFB0C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B34436FD38982F5D5261006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MMKVReader/MMKVReader.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"${PROJECT_DIR}/MMKVReader\"/**";
+				INFOPLIST_FILE = MMKVReader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MMKV",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.apkfuns.MMKVReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/MMKVReader/include\"/**";
+			};
+			name = Release;
+		};
+		4B34482EAAF0A84ADB07027D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4B344855DC21C13E0B4AE777 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MMKVReader/MMKVReader.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"${PROJECT_DIR}/MMKVReader\"/**";
+				INFOPLIST_FILE = MMKVReader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MMKV",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.apkfuns.MMKVReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/MMKVReader/include\"/**";
+			};
+			name = Debug;
+		};
+		4B34498DA1A6E776032A8CEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/MMKVReader/include/MMKVCore";
+				INFOPLIST_FILE = MMKVReaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MMKVReader",
+					"$(PROJECT_DIR)/MMKV",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apkfuns.MMKVReaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MMKVReader;
+			};
+			name = Debug;
+		};
+		4B344A516033BA81462BDCCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/MMKVReader/include/MMKVCore";
+				INFOPLIST_FILE = MMKVReaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MMKVReader",
+					"$(PROJECT_DIR)/MMKV",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apkfuns.MMKVReaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MMKVReader;
+			};
+			name = Release;
+		};
+		4B344AAC691D4E2563695943 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MMKVReader.app/Contents/MacOS/MMKVReader";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MMKVReaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apkfuns.MMKVReaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		4B344B6CA5FB833803F127EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4B344D201BE02DD2A6C7FC72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MMKVReader.app/Contents/MacOS/MMKVReader";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MMKVReaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apkfuns.MMKVReaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B344018791DFE13E75FA67F /* Build configuration list for PBXNativeTarget "MMKVReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B344855DC21C13E0B4AE777 /* Debug */,
+				4B34436FD38982F5D5261006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B344B0A4BD454828D3B1D8D /* Build configuration list for PBXNativeTarget "MMKVReaderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B34498DA1A6E776032A8CEB /* Debug */,
+				4B344A516033BA81462BDCCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B344C0E86DA010CBEBCD30F /* Build configuration list for PBXProject "MMKVReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B34482EAAF0A84ADB07027D /* Debug */,
+				4B344B6CA5FB833803F127EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B344EEBF1EE878F343E68D9 /* Build configuration list for PBXNativeTarget "MMKVReaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B344AAC691D4E2563695943 /* Debug */,
+				4B344D201BE02DD2A6C7FC72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B344E83A19B458DD06B09BE /* Project object */;
+}
